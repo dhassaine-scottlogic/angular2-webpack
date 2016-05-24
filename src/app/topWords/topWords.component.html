@@ -1,0 +1,14 @@
+<h1 class="title">{{title}}</h1>
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h2 class="panel-title">{{text}}</h2>
+  </div>
+  <div class="panel-body">
+    <div class="list-group">
+      <button class="list-group-item" *ngFor="let wordRank of topWords" [class.active]="wordRank === selectedWordRank" (click)="select(wordRank)">
+        <span class="badge">{{wordRank.rank}}</span>
+        {{wordRank.word}}
+      </button>
+    </div>
+  </div>
+</div>

@@ -1,11 +1,12 @@
-<header>
-  <nav>
-    <li ><a href="#">Home</a></li>
-  </nav>
-</header>
-<main>
-   <h1 class="title">{{message}}</h1>
-</main>
-<footer>
-  For a good starter pack, refer to: <a href="https://github.com/preboot/angular2-webpack">angular2-webpack</a>
-</footer>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-3">
+            <top-words (onSelect)="selectWordRank($event)"></top-words>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-3">
+            <word-details [details]="selectedWordRank"></word-details>
+        </div>
+    </div>
+</div>

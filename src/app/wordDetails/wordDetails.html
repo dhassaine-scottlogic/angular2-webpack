@@ -1,0 +1,8 @@
+<div *ngIf="details" class="panel panel-default">
+    <div class="panel-heading">{{details.word}}</div>
+    <div class="panel-body">
+        <div><label>Rank: </label>{{details.rank}}</div>
+        <div><label>Total occurences: </label>{{details.occurences}}</div>
+        <div><label>Probabilty of occuring: </label>{{details.probability | number}}%</div>
+    </div>
+</div>

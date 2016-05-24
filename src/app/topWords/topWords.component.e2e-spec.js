@@ -12,12 +12,12 @@ describe('App', function () {
     expect(element(by.css('my-app header')).isPresent()).toEqual(true);
   });
 
-  it('should have <main>', function () {
-    expect(element(by.css('my-app main')).isPresent()).toEqual(true);
-  });
-
   it('should have a main title', function () {
-    expect(element(by.css('main .title')).getText()).toEqual('Hello World');
+    expect(element(by.css('my-app .title')).getText()).toEqual('Word frequencies');
+  });
+  
+  it('should have a sub-heading', function () {
+    expect(element(by.css('my-app .subheading')).getText()).toEqual('Pride and Prejudice, by Jane Austen');
   });
 
   it('should have <footer>', function () {
