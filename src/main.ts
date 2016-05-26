@@ -1,7 +1,6 @@
 import { enableProdMode } from '@angular/core';
 import { bootstrap } from '@angular/platform-browser-dynamic';
 import { ELEMENT_PROBE_PROVIDERS } from '@angular/platform-browser';
-
 import {AppComponent} from './app/app.component';
 
 const ENV_PROVIDERS = [];
