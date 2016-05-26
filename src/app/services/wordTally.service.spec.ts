@@ -1,14 +1,12 @@
 
 import WordTallyService from './wordTally.service';
 
-
 describe('WordTallyService', function () {
     describe('getTopWordRanks()', function () {
         it('returns a promise that resolves to array containing the top n wordRanks', function (done) {
             const service = new WordTallyService();
             service.getTopWordRanks(10)
                 .then(topWords => {
-                    console.log(JSON.stringify(topWords));
                     expect(Array.isArray(topWords)).toEqual(true);
                     done();
                 });;

@@ -22,8 +22,7 @@ export function getTopWordRanks(text: string, limit?: number): WordRank[] {
                                 splitText(text.toLocaleLowerCase()))));
                                 
     const n = limit === undefined ? wordRanks.length : Math.min(wordRanks.length, limit);
-    return normalise(
-        wordRanks.slice(0, Math.min(wordRanks.length, n)));
+    return normalise(wordRanks.slice(0, Math.min(wordRanks.length, n)));
 }
 
 export function normalise(wordRanks: WordRank[]) {
